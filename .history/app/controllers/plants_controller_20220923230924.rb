@@ -35,10 +35,6 @@ class PlantsController < ApplicationController
     if plant
       plant.destroy
       render json: []
-      else
-        render json: {error: "Plant not found"}, status: :not_found
-      end
-    end
 
   private
 

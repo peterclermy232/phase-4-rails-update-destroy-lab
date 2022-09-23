@@ -34,11 +34,7 @@ class PlantsController < ApplicationController
     plant = Plant.find_by(id: params[:id])
     if plant
       plant.destroy
-      render json: []
-      else
-        render json: {error: "Plant not found"}, status: :not_found
-      end
-    end
+      render
 
   private
 

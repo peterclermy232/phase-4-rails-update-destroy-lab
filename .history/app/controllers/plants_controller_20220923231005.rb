@@ -38,7 +38,6 @@ class PlantsController < ApplicationController
       else
         render json: {error: "Plant not found"}, status: :not_found
       end
-    end
 
   private
 
